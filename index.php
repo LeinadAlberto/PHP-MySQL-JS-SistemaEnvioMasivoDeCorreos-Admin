@@ -1,3 +1,12 @@
+<?php 
+    require_once("config/conexion.php");
+    if (isset($_POST["enviar"]) and $_POST["enviar"]=="si") {
+        require_once("models/Usuario.php");
+        $usuario = new Usuario();
+        $usuario->login();
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -12,7 +21,7 @@
         <!-- Responsive CSS -->
         <link rel="stylesheet" href="public\css\responsive.css">
 
-        <title>Fiva - Bootstrap 4 Admin Dashboard Template</title>
+        <title>Acceso</title>
 
         <link rel="icon" type="image/png" href="public\img\favicon.png">
     </head>
@@ -30,14 +39,14 @@
 
                         <h2>Bienvenido</h2>
 
-                        <form>
+                        <form action="" method="POST">
                             <div class="form-group">
-                                <input type="text" class="form-control" name="email" placeholder="Correo Electrónico">
+                                <input type="text" class="form-control" id="correo" name="correo" placeholder="Correo Electrónico">
                                 <span class="label-title"><i class='bx bx-user'></i></span>
                             </div>
 
                             <div class="form-group">
-                                <input type="password" class="form-control" name="password" placeholder="Contraseña">
+                                <input type="password" class="form-control" id="password" name="password" placeholder="Contraseña">
                                 <span class="label-title"><i class='bx bx-lock'></i></span>
                             </div>
 
@@ -51,6 +60,8 @@
                                     <a href="forgot-password.html" class="forgot-password">Forgot password?</a>
                                 </div>
                             </div> -->
+
+                            <input type="hidden" name="enviar" value="si">
 
                             <button type="submit" class="login-btn">Acceder</button>
                         </form>
