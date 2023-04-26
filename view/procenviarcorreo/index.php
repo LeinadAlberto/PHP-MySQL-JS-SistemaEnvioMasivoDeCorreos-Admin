@@ -11,7 +11,7 @@
 <html lang="es">
     <head>
         <?php require_once("../html/MainHead.php"); ?> 
-        <title>Mantenimiento Producto</title>
+        <title>Enviar Correo</title>
     </head>
 
     <body>
@@ -29,12 +29,12 @@
             
             <!-- Breadcrumb Area -->
             <div class="breadcrumb-area">
-                <h1>Mnt Producto</h1>
+                <h1>Enviar Correo</h1>
 
                 <ol class="breadcrumb">
                     <li class="item"><a href="../home/"><i class='bx bx-home-alt'></i></a></li>
 
-                    <li class="item">Mantenimiento de Producto</li>
+                    <li class="item">Enviar Correo</li>
 
                     <!-- <li class="item">Blank Page</li> -->
                 </ol>
@@ -52,7 +52,7 @@
         
         <?php require_once("../html/MainJs.php"); ?>
         
-        <script src="mntproducto.js"></script>
+        <script src="procenviarcorreo.js"></script>
     </body>
 </html>
 

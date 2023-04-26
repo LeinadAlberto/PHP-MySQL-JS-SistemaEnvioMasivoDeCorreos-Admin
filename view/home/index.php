@@ -1,11 +1,21 @@
+<?php 
+
+    require_once("../../config/conexion.php");
+
+    if (isset($_SESSION["usu_id"])) {
+
+
+?>
+
 <!doctype html>
 <html lang="es">
     <head>
         <?php require_once("../html/MainHead.php"); ?> 
-        <title>Home</title>
+        <title>Inicio</title>
     </head>
 
     <body>
+
         <!-- Start Sidemenu Area -->
         <?php require_once("../html/MainMenu.php"); ?>
         <!-- End Sidemenu Area -->
@@ -22,11 +32,11 @@
                 <h1>Dashboard</h1>
 
                 <ol class="breadcrumb">
-                    <li class="item"><a href="dashboard-analytics.html"><i class='bx bx-home-alt'></i></a></li>
+                    <li class="item"><a href="../home/"><i class='bx bx-home-alt'></i></a></li>
 
                     <li class="item">Dashboard</li>
 
-                    <li class="item">Blank Page</li>
+                    <!-- <li class="item">Blank Page</li> -->
                 </ol>
             </div>
             <!-- End Breadcrumb Area -->
@@ -42,5 +52,13 @@
         
         <?php require_once("../html/MainJs.php"); ?>
         
+        <script src="home.js"></script>
     </body>
 </html>
+
+<?php 
+
+    } else {
+        header("Location: " . Conectar::ruta());
+    }
+?>

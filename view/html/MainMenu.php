@@ -21,27 +21,41 @@
     <div class="sidemenu-body">
         <ul class="sidemenu-nav metisMenu h-100" id="sidemenu-nav" data-simplebar="">
             <li class="nav-item-title">
-                Apps
+                Menú
             </li>
 
             <li class="nav-item">
-                <a href="app-chat.html" class="nav-link">
+                <a href="../home/" class="nav-link">
                     <span class="icon"><i class='bx bx-message'></i></span>
-                    <span class="menu-title">Chat</span>
+                    <span class="menu-title">Inicio</span>
                 </a>
             </li>
 
             <li class="nav-item">
-                <a href="app-todo.html" class="nav-link">
+                <a href="../mntusuario/" class="nav-link">
                     <span class="icon"><i class='bx bx-badge-check'></i></span>
-                    <span class="menu-title">Todo</span>
+                    <span class="menu-title">Mnt Usuario</span>
                 </a>
             </li>
 
             <li class="nav-item">
-                <a href="app-calendar.html" class="nav-link">
+                <a href="../mntproducto/" class="nav-link">
                     <span class="icon"><i class='bx bx-calendar'></i></span>
-                    <span class="menu-title">Calendar</span>
+                    <span class="menu-title">Mnt Producto</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="../procenviarcorreo/" class="nav-link">
+                    <span class="icon"><i class='bx bx-calendar'></i></span>
+                    <span class="menu-title">Enviar Correo</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="../html/logout.php" class="nav-link">
+                    <span class="icon"><i class='bx bx-log-out'></i></span>
+                    <span class="menu-title">Cerrar Sesión</span>
                 </a>
             </li>
         </ul>

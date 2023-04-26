@@ -11,7 +11,7 @@
 <html lang="es">
     <head>
         <?php require_once("../html/MainHead.php"); ?> 
-        <title>Mantenimiento Producto</title>
+        <title>Mantenimiento Usuario</title>
     </head>
 
     <body>
@@ -29,17 +29,39 @@
             
             <!-- Breadcrumb Area -->
             <div class="breadcrumb-area">
-                <h1>Mnt Producto</h1>
+                <h1>Mnt Usuario</h1>
 
                 <ol class="breadcrumb">
                     <li class="item"><a href="../home/"><i class='bx bx-home-alt'></i></a></li>
 
-                    <li class="item">Mantenimiento de Producto</li>
+                    <li class="item">Mantenimiento de Usuario</li>
 
                     <!-- <li class="item">Blank Page</li> -->
                 </ol>
             </div>
             <!-- End Breadcrumb Area -->
+
+            <div class="card mb-30">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h3>Listado de Usuarios</h3>
+                </div>
+
+                <div class="card-body">
+                    <table id="usuario_data" class="table display responsive nowrap">
+                        <thead>
+                            <tr>
+                                <th>Correo Electrónico</th>
+                                <th>Estado</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                            
+                        </tbody>
+                    </table>
+                </div><!-- /.card-body -->
+            </div><!-- /.card -->
 
             <div class="flex-grow-1"></div>
 
@@ -52,7 +74,7 @@
         
         <?php require_once("../html/MainJs.php"); ?>
         
-        <script src="mntproducto.js"></script>
+        <script src="mntusuario.js"></script>
     </body>
 </html>
 
