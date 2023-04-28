@@ -41,6 +41,18 @@
             </div>
             <!-- End Breadcrumb Area -->
 
+            <div class="card mb-30">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h3>Enviar Correo</h3>
+                    <br>
+                    <button onClick="enviarCorreo()" class="btn btn-outline-primary" id="btnenviar">Enviar Correo</button>
+                </div>
+
+                <div class="card-body">
+                    
+                </div><!-- /.card-body -->
+            </div><!-- /.card -->
+
             <div class="flex-grow-1"></div>
 
             <!-- Start Footer End -->

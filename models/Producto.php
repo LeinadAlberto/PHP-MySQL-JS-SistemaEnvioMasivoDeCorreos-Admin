@@ -53,8 +53,8 @@
                 prod_img=?, 
                 prod_cupon=?, 
                 prod_descrip=?, 
-                fech_modi=now(); 
-            WHERE prod_id:?"; 
+                fech_modi=now() 
+            WHERE prod_id=?"; 
             $sql = $conectar->prepare($sql);
             $sql->bindValue(1, $prod_nom);
             $sql->bindValue(2, $prod_precion);

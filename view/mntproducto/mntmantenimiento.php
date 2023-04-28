@@ -12,7 +12,8 @@
     
                 <div class="modal-body">
     
-                    <input type="hidden" name="prod_id" id="prod_id">
+                    <input type="text" name="prod_id" id="prod_id">
+
                     <div class="row">
                         <div class="col-md-6">
                             <!-- Nombre del Producto -->
